@@ -1,0 +1,143 @@
+/* line 7, ../src/ie.scss */
+body {
+  text-align: center;
+}
+/* line 48, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+* html body legend {
+  margin: 0px -8px 16px 0;
+  padding: 0;
+}
+/* line 52, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+html > body p code {
+  *white-space: normal;
+}
+/* line 67, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body .container {
+  text-align: left;
+}
+/* line 69, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body sup {
+  vertical-align: text-top;
+}
+/* line 71, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body sub {
+  vertical-align: text-bottom;
+}
+/* line 73, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body hr {
+  margin: -8px auto 11px;
+}
+/* line 75, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body img {
+  -ms-interpolation-mode: bicubic;
+}
+/* line 77, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body fieldset {
+  padding-top: 0;
+}
+/* line 79, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body textarea {
+  overflow: auto;
+}
+/* line 82, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body input.text {
+  margin: 0.5em 0;
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+/* line 86, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body input.text:focus {
+  border: 1px solid #666666;
+}
+/* line 88, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body input.title {
+  margin: 0.5em 0;
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+/* line 92, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body input.title:focus {
+  border: 1px solid #666666;
+}
+/* line 94, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body input.checkbox {
+  position: relative;
+  top: 0.25em;
+}
+/* line 97, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body input.radio {
+  position: relative;
+  top: 0.25em;
+}
+/* line 100, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body input.button {
+  position: relative;
+  top: 0.25em;
+}
+/* line 103, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body textarea {
+  margin: 0.5em 0;
+}
+/* line 105, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body select {
+  margin: 0.5em 0;
+}
+/* line 107, ../../../../../.gem/ruby/1.8/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body button {
+  position: relative;
+  top: 0.25em;
+}
+
+/* line 18, ../src/ie.scss */
+.cboxIE #cboxTopLeft {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderTopLeft.png, sizingMethod='scale');
+}
+
+/* line 19, ../src/ie.scss */
+.cboxIE #cboxTopCenter {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderTopCenter.png, sizingMethod='scale');
+}
+
+/* line 20, ../src/ie.scss */
+.cboxIE #cboxTopRight {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderTopRight.png, sizingMethod='scale');
+}
+
+/* line 21, ../src/ie.scss */
+.cboxIE #cboxBottomLeft {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderBottomLeft.png, sizingMethod='scale');
+}
+
+/* line 22, ../src/ie.scss */
+.cboxIE #cboxBottomCenter {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderBottomCenter.png, sizingMethod='scale');
+}
+
+/* line 23, ../src/ie.scss */
+.cboxIE #cboxBottomRight {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderBottomRight.png, sizingMethod='scale');
+}
+
+/* line 24, ../src/ie.scss */
+.cboxIE #cboxMiddleLeft {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderMiddleLeft.png, sizingMethod='scale');
+}
+
+/* line 25, ../src/ie.scss */
+.cboxIE #cboxMiddleRight {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://thuis.hehenka.mp/marten/wp-content/plugins/jquery-colorbox/themes/theme1/images/internet_explorer/borderMiddleRight.png, sizingMethod='scale');
+}
+
+/* line 27, ../src/ie.scss */
+#zoek-knop {
+  cursor: hand;
+  /* for IE 5.x */
+}

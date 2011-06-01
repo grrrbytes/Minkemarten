@@ -1,0 +1,99 @@
+// Page layout can be done using mixins applied to your semantic classes and IDs
+// For instance this layout defines a two column layout on pages with
+// a body class of "two-col".
+//
+// The markup would look like:
+//    <div id="container">
+//      <header id="header"></header>
+//      <section id="content"></section>
+//      <section id="sidebar"></section>
+//      <footer id="footer"></footer>
+//    </div>
+//
+// and the layout would look like:
+//    +------------------------+
+//    |        #header         |
+//    +---------------+--------+
+//    |               |        |
+//    |    #content   |#sidebar|
+//    |               |        |
+//    +------------------------+
+//    |        #footer         |
+//    +--------+---------------+
+
+body {
+	padding: 0px; 
+	width: 100%; 
+	min-height: $min-height; 
+	height: auto !important; 
+	height: 100%;
+
+  #container {
+    @include container; 
+	width: $container-width - 50; 
+	margin: 0 auto;
+	padding-left: 50px;
+	min-height: $min-height;
+	height: auto !important;
+	height: 100%;
+  }
+
+  #hoofding, #kopijrecht {
+    @include column($blueprint-grid-columns);
+  }
+
+  #hoofding {
+	position: relative;
+	overflow: visible;
+	height: $header-height;
+	z-index: 100;
+  }
+
+  #kopijrecht {
+	position: relative;
+	height: $footer-height;
+	width: $footer-width;
+	padding: 10px 0px;
+	margin: 0px;
+  }
+
+  #hoofdmenu {
+	position: absolute;
+	height: 150px;
+	width: 700px;
+  }
+
+  #submenu {
+	position: relative;
+	width: $submenu-width;
+	padding-top: 120px;
+	min-height: $content-height - 120px; 
+	height: auto !important;
+	height: $content-height - 120px;
+	margin-top: 0px;
+    display: inline;
+    float: left;
+    margin-right: 0;
+	z-index: 50;
+	overflow: visible;
+  }
+  
+  #inhoud {
+	position: relative;
+	$margin-top: 20px;
+	$padding: 30px;
+	$height: $content-height - (2*$padding) - $margin-top;
+	$width: $content-height - (2*$padding);
+	
+    display: inline;
+    float: left;
+    margin-right: 0;
+	padding: $padding;
+	min-height: $height;
+	margin-top: $margin-top; 
+	height: auto !important;
+	height: $height;
+	width: $width;
+	z-index: 20;
+  } 
+}

@@ -1,0 +1,75 @@
+@import "reset";
+@import "partials/base";
+@import "partials/one_col";
+@import "base";
+
+body {
+	background: url('../images/heelalachtergrond.gif') repeat-x;
+	background-color: $home-color;
+}
+
+.titel {
+	font-size: 16px;
+}
+
+.datum {
+	font-size: 16px;
+}
+
+.artikel:nth-child(3) {
+	margin-bottom: 0px;
+}
+
+#container {
+	background: url('../images/aardbolhome.jpg') no-repeat;
+}
+
+#thuis {
+	background: transparent;
+	width: 264px;
+	height: 116px;
+	top: 7px;
+	left: 348px;
+}
+
+#publicaties {
+	background: transparent;
+	width: image-width('../images/publicaties-marten-groot.png');
+	height: image-height('../images/publicaties-marten-groot.png');
+	top: 440px;
+	left: 55px;
+}
+
+#gedachten {
+	background: transparent;
+	width: image-width('../images/gedachten-marten-groot.png');
+	height: image-height('../images/gedachten-marten-groot.png');
+	top: 4px;
+	left: 678px;
+}
+
+#radio {
+	background: transparent;
+	width: image-width('../images/radio-marten-groot.png');
+	height: image-height('../images/radio-marten-groot.png');
+	left: 0px;
+	top: 142px;
+}
+
+#televisie {
+	background: transparent;
+	width: image-width('../images/televisie-marten-groot.png');
+	height: image-height('../images/televisie-marten-groot.png');
+	top: 19px;
+	left: 204px;
+}
+
+#personalia {
+	background: transparent;
+	width: image-width('../images/personalia-marten-groot.png');
+	height: image-height('../images/personalia-marten-groot.png');
+	top: 458px;
+	left: 683px;
+}
+
+@import "jquery.fancybox-1.3.4";

@@ -1,0 +1,7 @@
+@import "include";
+
+@include marten-pages('gedachten', $gedachten-color, 20px, 30px, 10px, 40px, 10px, 20px, 20px, 0px);
+
+body.gedachten #container {
+  background-position: 10px 120px;
+}

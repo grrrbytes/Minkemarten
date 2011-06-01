@@ -1,0 +1,48 @@
+@import "include";
+
+@include marten-pages('personalia', $personalia-color, 0px, 0px, 20px, 20px, 10px, 10px, 20px, 0px);
+
+.pagina-bordje {
+	position: absolute;
+	top: 0px;
+}
+
+.bericht-navigatie #personalia-bord {
+	$img: '../images/personalia-bord.gif';
+	left: 320px - (image-width($img)/2);
+	background: url($img) no-repeat;
+	height: image-height($img);
+	width: image-width($img);
+}
+
+.bericht-navigatie #colofon-bord {
+	$img: '../images/colofon-bord.gif';
+	left: 320px - (image-width($img)/2);
+	background: url($img) no-repeat;
+	height: image-height($img);
+	width: image-width($img);
+}
+
+.bericht-navigatie #nevenactiviteiten-bord {
+	$img: '../images/nevenactiviteiten-bord.gif';
+	left: 320px - (image-width($img)/2);
+	background: url($img) no-repeat;
+	height: image-height($img);
+	width: image-width($img);
+}
+
+.bericht-navigatie #curriculum-bord {
+	$img: '../images/curriculum-bord.gif';
+	left: 320px - (image-width($img)/2);
+	background: url($img) no-repeat;
+	height: image-height($img);
+	width: image-width($img);
+}
+
+.bericht-navigatie #copyright-bord {
+	$img: '../images/copyright-bord.gif';
+	left: 320px - (image-width($img)/2);
+	background: url($img) no-repeat;
+	height: image-height($img);
+	width: image-width($img);
+}

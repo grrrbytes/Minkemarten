@@ -1,0 +1,227 @@
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+@import "partials/custom_mixins";
+
+@import "compass/utilities/lists/inline-block-list";
+
+/* artikelen */
+
+.bericht .artikel {
+	min-height: 526px;
+}
+
+.navigatiebalk {
+	background-color: #000000;
+	height: 22px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+	
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		
+		/* later verwijderen: */
+		padding: 0;
+		background: none;
+		color: black;
+	}
+}
+
+#gerelateerd {
+	overflow: hidden;
+	text-align: left;
+}
+
+#gelijkgestemd {
+  	background: url('../images/gelijkgestemde-berichten.gif') no-repeat 50% 0%;
+	background-color: black;
+	height: 22px;
+}
+
+#gerelateerd, .artikel + .navigatiebalk, .link + .navigatiebalk, .navigatiebalk + .navigatiebalk {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 0px;
+	margin-top: 30px;
+	margin: 0 auto;
+	width: $content-width - 60px;
+}
+
+.gerelateerde-berichten li {
+	padding-left: 25px;
+	background: url('../images/stipje.gif') no-repeat 0% 50%;
+}
+  
+.vorige-pagina {
+	height: image-height('../images/vorige-pagina.gif');
+	width: image-width('../images/vorige-pagina.gif');
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	a {
+		background: url('../images/vorige-pagina.gif') no-repeat !important;
+	}
+}
+  
+.volgende-pagina {
+	height: image-height('../images/volgende-pagina.gif');
+	width: image-width('../images/volgende-pagina.gif');
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	a {
+		background: url('../images/volgende-pagina.gif') no-repeat !important;
+	}
+}
+
+.volledig {
+	margin-bottom: 30px;
+}
+
+.vorig-bericht {
+	height: image-height('../images/ouder-item.gif');
+	width: image-width('../images/ouder-item.gif');
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	a {
+		background: url('../images/ouder-item.gif') no-repeat !important;
+	}
+}
+  
+.volgend-bericht {
+	height: image-height('../images/nieuwer-item.gif');
+	width: image-width('../images/nieuwer-item.gif');
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	a {
+		background: url('../images/nieuwer-item.gif') no-repeat !important;
+	}
+}
+
+li.archief {
+	position: absolute;
+	top: 0px;
+	left: 320px - (image-width('../images/archief.gif')/2);
+	background: url('../images/archief.gif') no-repeat;
+	height: image-height('../images/archief.gif');
+	width: image-width('../images/archief.gif');
+}
+
+.artikel-thumbnail {
+	border: none;
+	outline: none;
+	text-decoration: none;
+}
+
+.stip {
+	background: url('../images/stipje.gif') no-repeat;
+	float: left;
+	width: 20px;
+	height: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+//@include marten-pages('gevonden', $gevonden-color, false);
+
+@include marten-menu-item('radio', 50px, 10px);
+@include marten-menu-item('televisie', 0px, 40px);
+@include marten-menu-item('links', 0px, 451px);
+@include marten-menu-item('publicaties', 40px, 150px);
+@include marten-menu-item('personalia', 40px, 370px);
+@include marten-menu-item('gedachten', 3px, 260px);
+
+/* menu */
+
+.subknop {
+	position: relative;
+}
+
+#knoppen {
+	position: relative;
+	overflow: visible;
+	top: 30px;
+	left: 170px;
+}
+
+#hoofdmenu, #submenu, .pagina-navigatie, .bericht-navigatie, .gerelateerde-berichten {
+  @include inline-block-list-container;
+  li {
+    @include inline-block-list-item;
+  }
+
+ 	overflow: visible
+}
+
+#thuis {
+	position: absolute;
+	left: -220px;
+	top: -20px;
+	background: url('../images/Marten-Minkema.png');
+	width: image-width('../images/Marten-Minkema.png');
+	height: image-height('../images/Marten-Minkema.png');
+}
+
+#marten  {
+	position: absolute;
+	right: 0;
+}
+
+/* zoek-formulier */
+
+#zoeken {
+	position: relative;
+	margin-top: 30px;
+	height: 30px;
+	right: 0px;
+	float: right;
+}
+
+#zoek-formulier {
+	width: 100%;
+	height: 100%;
+}
+
+#zoek-knop, #zoek-veld {
+	display: block;
+	float: left;
+	border: none;
+	padding: none;
+	margin: none;
+	outline: none;
+}
+
+#zoek-knop {
+	background: url('../images/zoek-knop.png');
+	width: image-width('../images/zoek-knop.png');
+	height: image-height('../images/zoek-knop.png');
+    cursor: pointer;
+}
+
+#zoek-veld {
+	font-size: 11px;
+	width: 120px;
+	margin-right: 3px;
+}
+
+/* footer */
+
+#postzegel {
+	background: url('../images/minkezegel.png') no-repeat;
+	width: image-width('../images/minkezegel.png');
+	height: image-height('../images/minkezegel.png');
+	position: relative;
+	margin-top: 10px;
+	margin-left: 40px;
+	float: left;
+}

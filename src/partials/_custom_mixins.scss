@@ -1,0 +1,80 @@
+@mixin marten-pages($page, $bgcolor, $top1, $left1, $top2, $left2, $top3, $left3, $top4, $right4, $menu: true) {
+
+	body.#{$page} {
+		background-color: $bgcolor;
+		$first-submenu: '../images/#{$page}-firstsub.png';
+		$second-submenu: '../images/#{$page}-secondsub.png';
+		$third-submenu: '../images/#{$page}-thirdsub.png';
+		$first-submenu-active: '../images/#{$page}-firstsub-actief.png';
+		$second-submenu-active: '../images/#{$page}-secondsub-actief.png';
+		$third-submenu-active: '../images/#{$page}-thirdsub-actief.png';
+
+		#container {
+			background: url('../images/#{$page}-achtergrond.jpg') no-repeat;
+		}
+
+		#marten {
+			$bg: '../images/#{$page}-marten.png';
+			background: url($bg) no-repeat;
+			width: image-width($bg);
+			height: image-height($bg);
+			top: $top4;
+			right: $right4;
+		}
+
+		@if $menu {
+			#eerste {
+				background: url($first-submenu) no-repeat;
+				width: image-width($first-submenu);
+				height: image-height($first-submenu);
+				margin-top: $top1;
+				margin-left: $left1;
+			}
+		
+			#eerste.actief {
+				background: url($first-submenu-active) no-repeat;
+			}
+
+			#tweede {
+				background: url($second-submenu) no-repeat;
+				width: image-width($second-submenu);
+				height: image-height($second-submenu);
+				margin-top: $top2;
+				margin-left: $left2;
+			}
+		
+			#tweede.actief {
+				background: url($second-submenu-active) no-repeat;
+			}
+
+			#derde {
+				background: url($third-submenu) no-repeat;
+				width: image-width($third-submenu);
+				height: image-height($third-submenu);
+				margin-top: $top3;
+				margin-left: $left3;
+			}
+		
+			#derde.actief {
+				background: url($third-submenu-active) no-repeat;
+			}
+		}
+	}
+}
+
+@mixin marten-menu-item($name, $top, $left) {
+	$menu-link: '../images/#{$name}.png';
+	$menu-link-active: '../images/#{$name}-actief.png';
+	
+	li##{$name} {		
+		background: url($menu-link) no-repeat;
+		width: image-width($menu-link);
+		height: image-height($menu-link);
+		top: $top;
+		left: $left;
+	}
+	
+	body.#{$name} li##{$name} {
+		background: url($menu-link-active) no-repeat;
+	}
+}

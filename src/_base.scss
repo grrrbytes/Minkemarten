@@ -1,0 +1,278 @@
+html * {
+font-size: 100.01%;
+}
+
+header, section, article, p, div {
+	overflow: hidden;
+}
+
+body, div, p {
+    font-family: Georgia, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+	line-height: 1.5;
+}
+
+div {
+	position: static;
+	overflow: visible;
+}
+
+p {
+	margin: 1em 0px;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+a, a:hover {
+    text-decoration: none;
+  	color: black; 
+  	font-weight: bold;
+	border: none;
+	outline: none;
+}
+
+a[href^="http:"] {  
+ 	display: inline-block;
+  	padding-right: 22px; 
+  	background: url('../images/icon-external.gif') right center no-repeat;
+} 
+   
+a[href^="http://www.martenminkema.nl"], a[href^="http://martenminkema.nl"], a.linkslink { 
+	display: inline-block;
+  	background: transparent; 
+  	padding-right: 0px; 
+}
+
+a[href^="http://thuis.hehenka.mp"], a[href^="http://thuis.hehenka.mp"], a.linkslink { 
+	display: inline-block;
+  	background: transparent; 
+  	padding-right: 0px; 
+}
+  
+a[href ^="mailto:"] {
+	display: inline-block;
+  	padding-right: 28px;
+  	background: transparent url('../images/icon-mailto.gif') no-repeat center right;
+}
+
+a[href $='.pdf'] { 
+	display: inline-block;
+  	padding-right: 22px;
+  	background: transparent url('../images/icon-pdf.gif') no-repeat center right;
+}
+
+a[rel=lightbox], a.bookmark {
+	display: inline-block;
+	background: transparent; 
+	padding-right: 0px;
+	position: static; 
+	float: left;
+	overflow: hidden;
+}
+
+a.alleen-text { 
+	float: none;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 0px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 0px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 12px;
+}
+
+.wp-caption {
+	line-height: 18px;
+	margin-bottom: 20px;
+	max-width: 632px !important; /* prevent too-wide images from breaking layout */
+	padding: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	margin: 0;
+}
+.wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 10px;
+	margin: 5px;
+}
+
+/* img.alignleft { float: left; margin: 0 10px 10px 0; }
+img.alignright { float: right; margin: 0 10px 10px 0; }
+img.aligncenter { text-align: center; margin: 0 auto 10px; } */
+
+/* artikelen */
+
+.icoontje {
+  	position: relative;
+  	width: 25px;
+  	height: 25px;
+  	float: right;
+}  
+
+ul#rss-feeds {
+  	list-style-image: url('../images/RSS-icoontje.png');
+	margin-left: 30px;
+}
+
+ul#rss-feeds li {
+  	line-height: 20px;
+  	font-size: 15px;
+  	vertical-align: middle;
+}
+
+.radio .icoontje {
+	background: url('../images/radio-icoon.png') no-repeat;
+}
+
+.televisie .icoontje {
+	background: url('../images/televisie-icoon.png') no-repeat;
+}
+
+.gedachten .icoontje {
+	background: url('../images/gedachten-icoon.png') no-repeat;
+}
+
+.publicaties .icoontje {
+	background: url('../images/publicaties-icoon.png') no-repeat;
+}
+
+.artikel a[rel=lightbox] {
+    min-height: 80px;
+	float: left;
+}
+
+.titel, h1.link {
+	font-weight: bold;
+	font-size: 22px;
+	color: #000000;
+	text-decoration: none;
+	float: left;
+	margin-bottom: 4px;
+}
+
+a.thumbnail-link, .blok-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.datum {
+	color: #363A4E;
+	font-size: 22px;
+	font-weight: bold;
+	padding-right: 6px;
+	float: left;
+}
+
+.artikel-hoofd {
+	position: relative;
+	overflow: hidden;
+}
+
+.artikel, article.link {
+	position: relative;
+	width: 100%;
+	position: static;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 10px;
+}
+
+.artikel:nth-child(5), article.link:nth-child(11) {
+	margin-bottom: 60px;
+}
+
+#inhoud {
+	background: url('../images/achtergrondpixel.png');
+}
+
+.bericht-icoon { 
+	display: block;
+	position: relative;
+	width: 150px;
+	float: left; 
+	margin: 0 10px 10px 0; 
+	border: none;
+	outline: none;
+}
+
+/* menu */
+
+.knop {
+	position: absolute;
+}
+
+.knop a, .subknop a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	outline: none;
+}
+
+#inhoud {
+	text-align: justify;
+}
+
+/* footer */
+
+#rss {
+	background: url('../images/RSS.png') no-repeat;
+	width: image-width('../images/RSS.png');
+	height: image-height('../images/RSS.png');
+	float: left;
+	margin-top: 0px;
+}
+
+#copyright {
+	background: url('../images/creative-commons.png') no-repeat;
+	width: image-width('../images/creative-commons.png');
+	height: image-height('../images/creative-commons.png');
+	float: left;
+	margin-left: 5px;
+	margin-top: 0px;
+}
+
+#icoontjes {
+	width: 110px;
+	height: 25px;
+	margin: 0 auto;
+}

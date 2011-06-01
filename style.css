@@ -1,0 +1,12 @@
+/*
+Theme Name: Marten Minkema
+Theme URI: http://martenminkema.nl
+Description: Custom theme from scratch for martenminkema.nl
+Author: Ilja Hehenkamp
+Version: 1.0 beta
+Tags: html5, css3, gracefull degradation
+*/
+
+@import url('css/layouts/1column.css') all;
+@import url('css/styling.css') all;
+@import url('css/print.css') print;

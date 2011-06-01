@@ -1,0 +1,14 @@
+@import "include";
+
+@include marten-pages('gevonden', $gevonden-color, -20px, -30px, 0px, 30px, 0px, 10px, 160px, -30px, false);
+
+#submenu {
+	top: 300px;
+}
+
+#zoekbord {
+	background: url('../images/gevonden.png') 50% no-repeat;
+	width: 100%;
+	height: image-height('../images/gevonden.png');
+	margin-bottom: 10px;
+}

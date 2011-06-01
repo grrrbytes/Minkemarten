@@ -1,0 +1,39 @@
+// Page layout can be done using mixins applied to your semantic classes and IDs
+// For instance this layout defines a three column layout on pages with
+// a body class of "three-col".
+//
+// The markup would look like:
+//    <div id="container">
+//      <header id="header"></header>
+//      <section id="sidebar"></section>
+//      <section id="content"></section>
+//      <section id="sidebar"></section>
+//      <footer id="footer"></footer>
+//    </div>
+//
+// and the layout would look like:
+//    +---------------------------------+
+//    |             #header             |
+//    +--------+---------------+--------+
+//    |        |               |        |
+//    |#sidebar|    #content   |#sidebar|
+//    |        |               |        |
+//    +---------------------------------+
+//    |             #footer             |
+//    +--------+---------------+--------+
+
+body.three-col {
+  #container {
+    @include container; }
+  #header, #footer {
+    @include column($blueprint-grid-columns); }
+  #sidebar {
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    $sidebar-columns: floor($blueprint-grid-columns / 3);
+    @include column($sidebar-columns); }
+  #content {
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
+    // true means it's the last column in the row
+    @include column($content-columns, true); } }

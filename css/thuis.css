@@ -1,0 +1,980 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../src/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../src/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../src/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../src/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../src/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../src/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../src/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 24, ../src/partials/_one_col.scss */
+body {
+  padding: 0px;
+  width: 100%;
+  min-height: 710px;
+  height: auto !important;
+  height: 100%;
+}
+/* line 31, ../src/partials/_one_col.scss */
+body #container {
+  overflow: hidden;
+  width: 960px;
+  margin: 0 auto;
+  min-height: 710px;
+  height: auto !important;
+  height: 100%;
+}
+/* line 40, ../src/partials/_one_col.scss */
+body #hoofding, body #kopijrecht {
+  display: inline;
+  float: left;
+  width: 960px;
+}
+/* line 46, ../src/partials/_one_col.scss */
+body #hoofding {
+  overflow: visible;
+  height: 170px;
+  z-index: 100;
+}
+/* line 52, ../src/partials/_one_col.scss */
+body #kopijrecht {
+  position: relative;
+  height: 25px;
+  padding: 10px 0px;
+  margin: 0px;
+}
+/* line 59, ../src/partials/_one_col.scss */
+body #hoofdmenu, body #knoppen {
+  position: absolute;
+  width: 960px;
+  height: 710px;
+  overflow: visible;
+}
+/* line 66, ../src/partials/_one_col.scss */
+body #inhoud {
+  position: relative;
+  display: inline;
+  float: left;
+  margin: 0 285px;
+  padding: 20px;
+  min-height: 400px;
+  margin-top: 0px;
+  height: auto !important;
+  height: 400px;
+  width: 350px;
+  z-index: 20;
+}
+
+/* line 1, ../src/_base.scss */
+html * {
+  font-size: 100.01%;
+}
+
+/* line 5, ../src/_base.scss */
+header, section, article, p, div {
+  overflow: hidden;
+}
+
+/* line 9, ../src/_base.scss */
+body, div, p {
+  font-family: Georgia, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* line 15, ../src/_base.scss */
+div {
+  position: static;
+  overflow: visible;
+}
+
+/* line 20, ../src/_base.scss */
+p {
+  margin: 1em 0px;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+/* line 26, ../src/_base.scss */
+a, a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+/* line 34, ../src/_base.scss */
+a[href^="http:"] {
+  display: inline-block;
+  padding-right: 22px;
+  background: url("../images/icon-external.gif") right center no-repeat;
+}
+
+/* line 40, ../src/_base.scss */
+a[href^="http://www.martenminkema.nl"], a[href^="http://martenminkema.nl"], a.linkslink {
+  display: inline-block;
+  background: transparent;
+  padding-right: 0px;
+}
+
+/* line 46, ../src/_base.scss */
+a[href^="http://thuis.hehenka.mp"], a[href^="http://thuis.hehenka.mp"], a.linkslink {
+  display: inline-block;
+  background: transparent;
+  padding-right: 0px;
+}
+
+/* line 52, ../src/_base.scss */
+a[href^="mailto:"] {
+  display: inline-block;
+  padding-right: 28px;
+  background: transparent url("../images/icon-mailto.gif") no-repeat center right;
+}
+
+/* line 58, ../src/_base.scss */
+a[href$='.pdf'] {
+  display: inline-block;
+  padding-right: 22px;
+  background: transparent url("../images/icon-pdf.gif") no-repeat center right;
+}
+
+/* line 64, ../src/_base.scss */
+a[rel=lightbox], a.bookmark {
+  display: inline-block;
+  background: transparent;
+  padding-right: 0px;
+  position: static;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 73, ../src/_base.scss */
+a.alleen-text {
+  float: none;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+/* line 89, ../src/_base.scss */
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img {
+  max-width: 100%;
+  /* When images are too wide for containing element, force them to fit. */
+  height: auto;
+  /* Override height to match resized width for correct aspect ratio. */
+}
+
+/* line 94, ../src/_base.scss */
+.alignleft,
+img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 24px;
+  margin-top: 0px;
+}
+
+/* line 101, ../src/_base.scss */
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 24px;
+  margin-top: 0px;
+}
+
+/* line 108, ../src/_base.scss */
+.aligncenter,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 116, ../src/_base.scss */
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 12px;
+}
+
+/* line 120, ../src/_base.scss */
+.wp-caption {
+  line-height: 18px;
+  margin-bottom: 20px;
+  max-width: 632px !important;
+  /* prevent too-wide images from breaking layout */
+  padding: 4px;
+  text-align: center;
+}
+
+/* line 127, ../src/_base.scss */
+.wp-caption img {
+  margin: 0;
+}
+
+/* line 130, ../src/_base.scss */
+.wp-caption p.wp-caption-text {
+  color: #888;
+  font-size: 10px;
+  margin: 5px;
+}
+
+/* img.alignleft { float: left; margin: 0 10px 10px 0; }
+img.alignright { float: right; margin: 0 10px 10px 0; }
+img.aligncenter { text-align: center; margin: 0 auto 10px; } */
+/* artikelen */
+/* line 142, ../src/_base.scss */
+.icoontje {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  float: right;
+}
+
+/* line 149, ../src/_base.scss */
+ul#rss-feeds {
+  list-style-image: url("../images/RSS-icoontje.png");
+  margin-left: 30px;
+}
+
+/* line 154, ../src/_base.scss */
+ul#rss-feeds li {
+  line-height: 20px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* line 160, ../src/_base.scss */
+.radio .icoontje {
+  background: url("../images/radio-icoon.png") no-repeat;
+}
+
+/* line 164, ../src/_base.scss */
+.televisie .icoontje {
+  background: url("../images/televisie-icoon.png") no-repeat;
+}
+
+/* line 168, ../src/_base.scss */
+.gedachten .icoontje {
+  background: url("../images/gedachten-icoon.png") no-repeat;
+}
+
+/* line 172, ../src/_base.scss */
+.publicaties .icoontje {
+  background: url("../images/publicaties-icoon.png") no-repeat;
+}
+
+/* line 176, ../src/_base.scss */
+.artikel a[rel=lightbox] {
+  min-height: 80px;
+  float: left;
+}
+
+/* line 181, ../src/_base.scss */
+.titel, h1.link {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+  text-decoration: none;
+  float: left;
+  margin-bottom: 4px;
+}
+
+/* line 190, ../src/_base.scss */
+a.thumbnail-link, .blok-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 196, ../src/_base.scss */
+.datum {
+  color: #363A4E;
+  font-size: 22px;
+  font-weight: bold;
+  padding-right: 6px;
+  float: left;
+}
+
+/* line 204, ../src/_base.scss */
+.artikel-hoofd {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 209, ../src/_base.scss */
+.artikel, article.link {
+  position: relative;
+  width: 100%;
+  position: static;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+/* line 219, ../src/_base.scss */
+.artikel:nth-child(5), article.link:nth-child(11) {
+  margin-bottom: 60px;
+}
+
+/* line 223, ../src/_base.scss */
+#inhoud {
+  background: url("../images/achtergrondpixel.png");
+}
+
+/* line 227, ../src/_base.scss */
+.bericht-icoon {
+  display: block;
+  position: relative;
+  width: 150px;
+  float: left;
+  margin: 0 10px 10px 0;
+  border: none;
+  outline: none;
+}
+
+/* menu */
+/* line 239, ../src/_base.scss */
+.knop {
+  position: absolute;
+}
+
+/* line 243, ../src/_base.scss */
+.knop a, .subknop a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 251, ../src/_base.scss */
+#inhoud {
+  text-align: justify;
+}
+
+/* footer */
+/* line 257, ../src/_base.scss */
+#rss {
+  background: url("../images/RSS.png") no-repeat;
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-top: 0px;
+}
+
+/* line 265, ../src/_base.scss */
+#copyright {
+  background: url("../images/creative-commons.png") no-repeat;
+  width: 71px;
+  height: 25px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+/* line 274, ../src/_base.scss */
+#icoontjes {
+  width: 110px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+/* line 6, ../src/thuis.scss */
+body {
+  background: url("../images/heelalachtergrond.gif") repeat-x;
+  background-color: #2f3333;
+}
+
+/* line 11, ../src/thuis.scss */
+.titel {
+  font-size: 16px;
+}
+
+/* line 15, ../src/thuis.scss */
+.datum {
+  font-size: 16px;
+}
+
+/* line 19, ../src/thuis.scss */
+.artikel:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+/* line 23, ../src/thuis.scss */
+#container {
+  background: url("../images/aardbolhome.jpg") no-repeat;
+}
+
+/* line 27, ../src/thuis.scss */
+#thuis {
+  background: transparent;
+  width: 264px;
+  height: 116px;
+  top: 7px;
+  left: 348px;
+}
+
+/* line 35, ../src/thuis.scss */
+#publicaties {
+  background: transparent;
+  width: 220px;
+  height: 261px;
+  top: 440px;
+  left: 55px;
+}
+
+/* line 43, ../src/thuis.scss */
+#gedachten {
+  background: transparent;
+  width: 278px;
+  height: 425px;
+  top: 4px;
+  left: 678px;
+}
+
+/* line 51, ../src/thuis.scss */
+#radio {
+  background: transparent;
+  width: 194px;
+  height: 285px;
+  left: 0px;
+  top: 142px;
+}
+
+/* line 59, ../src/thuis.scss */
+#televisie {
+  background: transparent;
+  width: 177px;
+  height: 187px;
+  top: 19px;
+  left: 204px;
+}
+
+/* line 67, ../src/thuis.scss */
+#personalia {
+  background: transparent;
+  width: 134px;
+  height: 233px;
+  top: 458px;
+  left: 683px;
+}
+
+/*
+ * FancyBox - jQuery Plugin
+ * Simple and fancy lightbox alternative
+ *
+ * Examples and documentation at: http://fancybox.net
+ * 
+ * Copyright (c) 2008 - 2010 Janis Skarnelis
+ * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
+ * 
+ * Version: 1.3.4 (11/11/2010)
+ * Requires: jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+/* line 18, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1104;
+  display: none;
+}
+
+/* line 32, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-loading div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 480px;
+}
+
+/* line 41, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  display: none;
+}
+
+/* line 50, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: auto;
+  display: none;
+}
+
+/* line 58, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1101;
+  outline: none;
+  display: none;
+}
+
+/* line 68, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+/* line 75, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-content {
+  width: 0;
+  height: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1102;
+  border: 0px solid #fff;
+}
+
+/* line 86, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-hide-sel-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1101;
+}
+
+/* line 96, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1103;
+  display: none;
+}
+
+/* line 108, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-error {
+  color: #444;
+  font: normal 12px/20px Arial;
+  padding: 14px;
+  margin: 0;
+}
+
+/* line 115, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  line-height: 0;
+  vertical-align: top;
+}
+
+/* line 126, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* line 133, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-left, #fancybox-right {
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  width: 35%;
+  cursor: pointer;
+  outline: none;
+  z-index: 1102;
+  display: none;
+}
+
+/* line 145, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-left {
+  left: 0px;
+}
+
+/* line 149, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-right {
+  right: 0px;
+}
+
+/* line 153, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-left-ico, #fancybox-right-ico {
+  position: absolute;
+  top: 50%;
+  left: -9999px;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  cursor: pointer;
+  z-index: 1102;
+  display: block;
+}
+
+/* line 165, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-left-ico {
+  background-image: url("../images/pijl-links.jpg");
+}
+
+/* line 169, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-right-ico {
+  background-image: url("../images/pijl-rechts.jpg");
+}
+
+/* line 173, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-left:hover, #fancybox-right:hover {
+  visibility: visible;
+  /* IE6 */
+}
+
+/* line 177, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-left:hover span {
+  left: 20px;
+}
+
+/* line 181, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-right:hover span {
+  left: auto;
+  right: 20px;
+}
+
+/* line 186, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-bg {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 1001;
+}
+
+/* line 196, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-n {
+  top: -20px;
+  left: 0;
+  width: 100%;
+}
+
+/* line 203, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-ne {
+  top: -20px;
+  right: -20px;
+  background-position: -40px -162px;
+}
+
+/* line 210, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-e {
+  top: 0;
+  right: -20px;
+  height: 100%;
+  background-position: -20px 0px;
+}
+
+/* line 218, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-se {
+  bottom: -20px;
+  right: -20px;
+  background-position: -40px -182px;
+}
+
+/* line 225, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-s {
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  background-position: 0px -20px;
+}
+
+/* line 233, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-sw {
+  bottom: -20px;
+  left: -20px;
+  background-position: -40px -142px;
+}
+
+/* line 240, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-w {
+  top: 0;
+  left: -20px;
+  height: 100%;
+}
+
+/* line 247, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-bg-nw {
+  top: -20px;
+  left: -20px;
+  background-position: -40px -122px;
+}
+
+/* line 254, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-title {
+  font-family: Helvetica;
+  font-size: 12px;
+  z-index: 1102;
+}
+
+/* line 260, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-title-inside {
+  padding-bottom: 10px;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  position: relative;
+}
+
+/* line 268, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-title-outside {
+  padding-top: 10px;
+  color: #fff;
+}
+
+/* line 273, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-title-over {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+  text-align: left;
+}
+
+/* line 281, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-title-over {
+  padding: 10px;
+  display: block;
+}
+
+/* line 287, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-title-float {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  height: 32px;
+}
+
+/* line 294, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-title-float-wrap {
+  border: none;
+  border-collapse: collapse;
+  width: auto;
+}
+
+/* line 300, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-title-float-wrap td {
+  border: none;
+  white-space: nowrap;
+}
+
+/* line 305, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-title-float-left {
+  padding: 0 0 0 15px;
+}
+
+/* line 310, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-title-float-main {
+  color: #FFF;
+  line-height: 29px;
+  font-weight: bold;
+  padding: 0 0 3px 0;
+}
+
+/* line 318, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-title-float-right {
+  padding: 0 0 0 15px;
+}
+
+/* IE6 */
+/* line 325, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-close {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_close.png', sizingMethod='scale');
+}
+
+/* line 327, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-left-ico {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale');
+}
+
+/* line 328, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-right-ico {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale');
+}
+
+/* line 330, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-title-over {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale');
+  zoom: 1;
+}
+
+/* line 331, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-title-float-left {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale');
+}
+
+/* line 332, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-title-float-main {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale');
+}
+
+/* line 333, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-title-float-right {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale');
+}
+
+/* line 335, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie6 #fancybox-bg-w, .fancybox-ie6 #fancybox-bg-e, .fancybox-ie6 #fancybox-left, .fancybox-ie6 #fancybox-right, #fancybox-hide-sel-frame {
+  height: expression(this.parentNode.clientHeight + "px");
+}
+
+/* line 339, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-loading.fancybox-ie6 {
+  position: absolute;
+  margin-top: 0;
+  top: expression((-20 + (document.documentElement.clientHeight ? document.documentElement.clientHeight/2 : document.body.clientHeight/2 ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop )) + 'px');
+}
+
+/* line 344, ../src/_jquery.fancybox-1.3.4.scss */
+#fancybox-loading.fancybox-ie6 div {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale');
+}
+
+/* IE6, IE7, IE8 */
+/* line 348, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie .fancybox-bg {
+  background: transparent !important;
+}
+
+/* line 350, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-n {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_n.png', sizingMethod='scale');
+}
+
+/* line 351, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-ne {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_ne.png', sizingMethod='scale');
+}
+
+/* line 352, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-e {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_e.png', sizingMethod='scale');
+}
+
+/* line 353, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-se {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_se.png', sizingMethod='scale');
+}
+
+/* line 354, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-s {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_s.png', sizingMethod='scale');
+}
+
+/* line 355, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-sw {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_sw.png', sizingMethod='scale');
+}
+
+/* line 356, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-w {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_w.png', sizingMethod='scale');
+}
+
+/* line 357, ../src/_jquery.fancybox-1.3.4.scss */
+.fancybox-ie #fancybox-bg-nw {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_nw.png', sizingMethod='scale');
+}
