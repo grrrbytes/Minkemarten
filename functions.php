@@ -30,6 +30,9 @@ function mm_img_caption_shortcode($attr, $content = null) {
 	if ( 1 > (int) $width || empty($caption) )
 		return $content;
 	if ( $id ) $id = 'id="' . $id . '" ';
+
+	$content = str_replace("alt=\"\"", "alt=\" . $caption . \"", $content);
+
 	return '<div ' . $id . 'class="wp-caption ' . $align . '" style="width: ' . (10 + (int) $width) . 'px">'
 	. do_shortcode( $content ) . '</div>';
 }
