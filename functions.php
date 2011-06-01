@@ -14,7 +14,28 @@ add_theme_support( 'post-thumbnails', array( 'radio', 'televisie', 'gedachten', 
 add_action( 'after_setup_theme', 'mm_setup' );
 
 //add_filter( 'disable_captions', create_function( '$a','return true;' ) );
-add_filter( 'img_caption_shortcode', create_function('$a, $b, $c', 'return $c;'), 10, 3 );
+//add_filter( 'img_caption_shortcode', create_function('$a, $b, $c', 'return $c;'), 10, 3 );
+
+function mm_img_caption_shortcode($attr, $content = null) {
+	// Allow plugins/themes to override the default caption template.
+	$output = apply_filters('img_caption_shortcode', '', $attr, $content);
+	if ( $output != '' )
+		return $output;
+	extract(shortcode_atts(array(
+		'id'	=> '',
+		'align'	=> 'alignnone',
+		'width'	=> '',
+		'caption' => ''
+	), $attr));
+	if ( 1 > (int) $width || empty($caption) )
+		return $content;
+	if ( $id ) $id = 'id="' . $id . '" ';
+	return '<dl ' . $id . 'class="wp-caption ' . $align . '" style="width: ' . (10 + (int) $width) . 'px"><dt>'
+	. do_shortcode( $content ) . '</dt><dd class="wp-caption-text">' . $caption . '</dd></dl>';
+}
+
+add_shortcode('wp_caption', 'mm_img_caption_shortcode');
+add_shortcode('caption', 'mm_img_caption_shortcode');
 
 if ( ! function_exists( 'mm_setup' ) ):
 /**
