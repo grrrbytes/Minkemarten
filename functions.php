@@ -30,8 +30,8 @@ function mm_img_caption_shortcode($attr, $content = null) {
 	if ( 1 > (int) $width || empty($caption) )
 		return $content;
 	if ( $id ) $id = 'id="' . $id . '" ';
-	return '<dl ' . $id . 'class="wp-caption ' . $align . '" style="width: ' . (10 + (int) $width) . 'px"><dt>'
-	. do_shortcode( $content ) . '</dt><dd class="wp-caption-text">' . $caption . '</dd></dl>';
+	return '<div ' . $id . 'class="wp-caption ' . $align . '" style="width: ' . (10 + (int) $width) . 'px">'
+	. do_shortcode( $content ) . '</div>';
 }
 
 add_shortcode('wp_caption', 'mm_img_caption_shortcode');
