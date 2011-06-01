@@ -208,7 +208,7 @@ a.alleen-text {
 }
 
 /* line 78, ../src/_base.scss */
-p.audioplayer_container {
+.audioplayer_container {
   display: inline;
 }
 
