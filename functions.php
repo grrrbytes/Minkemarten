@@ -13,7 +13,8 @@ add_theme_support( 'post-thumbnails', array( 'radio', 'televisie', 'gedachten', 
 /** Tell WordPress to run twentyten_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'mm_setup' );
 
-add_filter( 'disable_captions', create_function( '$a','return true;' ) );
+//add_filter( 'disable_captions', create_function( '$a','return true;' ) );
+add_filter( 'img_caption_shortcode', create_function('$a, $b, $c', 'return $c;'), 10, 3 );
 
 if ( ! function_exists( 'mm_setup' ) ):
 /**
