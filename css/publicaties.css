@@ -482,6 +482,11 @@ a.alleen-text {
   float: none;
 }
 
+/* line 78, ../src/_base.scss */
+p.audioplayer_container {
+  display: inline;
+}
+
 /* =Images
 -------------------------------------------------------------- */
 /*
@@ -489,7 +494,7 @@ Resize images to fit the main content area.
 - Applies only to images uploaded via WordPress by targeting size-* classes.
 - Other images will be left alone. Use "size-auto" class to apply to other images.
 */
-/* line 90, ../src/_base.scss */
+/* line 94, ../src/_base.scss */
 img.size-auto,
 img.size-full,
 img.size-large,
@@ -501,7 +506,7 @@ img.size-medium,
   /* Override height to match resized width for correct aspect ratio. */
 }
 
-/* line 95, ../src/_base.scss */
+/* line 99, ../src/_base.scss */
 .alignleft,
 img.alignleft {
   display: inline;
@@ -510,7 +515,7 @@ img.alignleft {
   margin-top: 0px;
 }
 
-/* line 102, ../src/_base.scss */
+/* line 106, ../src/_base.scss */
 .alignright,
 img.alignright {
   display: inline;
@@ -519,7 +524,7 @@ img.alignright {
   margin-top: 0px;
 }
 
-/* line 109, ../src/_base.scss */
+/* line 113, ../src/_base.scss */
 .aligncenter,
 img.aligncenter {
   clear: both;
@@ -528,14 +533,14 @@ img.aligncenter {
   margin-right: auto;
 }
 
-/* line 117, ../src/_base.scss */
+/* line 121, ../src/_base.scss */
 img.alignleft,
 img.alignright,
 img.aligncenter {
   margin-bottom: 12px;
 }
 
-/* line 121, ../src/_base.scss */
+/* line 125, ../src/_base.scss */
 .wp-caption {
   line-height: 18px;
   margin-bottom: 20px;
@@ -545,12 +550,12 @@ img.aligncenter {
   text-align: center;
 }
 
-/* line 128, ../src/_base.scss */
+/* line 132, ../src/_base.scss */
 .wp-caption img {
   margin: 0;
 }
 
-/* line 131, ../src/_base.scss */
+/* line 135, ../src/_base.scss */
 .wp-caption p.wp-caption-text {
   color: #888;
   font-size: 10px;
@@ -561,7 +566,7 @@ img.aligncenter {
 img.alignright { float: right; margin: 0 10px 10px 0; }
 img.aligncenter { text-align: center; margin: 0 auto 10px; } */
 /* artikelen */
-/* line 143, ../src/_base.scss */
+/* line 147, ../src/_base.scss */
 .icoontje {
   position: relative;
   width: 25px;
@@ -569,46 +574,46 @@ img.aligncenter { text-align: center; margin: 0 auto 10px; } */
   float: right;
 }
 
-/* line 150, ../src/_base.scss */
+/* line 154, ../src/_base.scss */
 ul#rss-feeds {
   list-style-image: url("../images/RSS-icoontje.png");
   margin-left: 30px;
 }
 
-/* line 155, ../src/_base.scss */
+/* line 159, ../src/_base.scss */
 ul#rss-feeds li {
   line-height: 20px;
   font-size: 15px;
   vertical-align: middle;
 }
 
-/* line 161, ../src/_base.scss */
+/* line 165, ../src/_base.scss */
 .radio .icoontje {
   background: url("../images/radio-icoon.png") no-repeat;
 }
 
-/* line 165, ../src/_base.scss */
+/* line 169, ../src/_base.scss */
 .televisie .icoontje {
   background: url("../images/televisie-icoon.png") no-repeat;
 }
 
-/* line 169, ../src/_base.scss */
+/* line 173, ../src/_base.scss */
 .gedachten .icoontje {
   background: url("../images/gedachten-icoon.png") no-repeat;
 }
 
-/* line 173, ../src/_base.scss */
+/* line 177, ../src/_base.scss */
 .publicaties .icoontje {
   background: url("../images/publicaties-icoon.png") no-repeat;
 }
 
-/* line 177, ../src/_base.scss */
+/* line 181, ../src/_base.scss */
 .artikel a[rel=lightbox] {
   min-height: 80px;
   float: left;
 }
 
-/* line 182, ../src/_base.scss */
+/* line 186, ../src/_base.scss */
 .titel, h1.link {
   font-weight: bold;
   font-size: 22px;
@@ -618,14 +623,14 @@ ul#rss-feeds li {
   margin-bottom: 10px;
 }
 
-/* line 191, ../src/_base.scss */
+/* line 195, ../src/_base.scss */
 a.thumbnail-link, .blok-link {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 197, ../src/_base.scss */
+/* line 201, ../src/_base.scss */
 .datum {
   color: #363A4E;
   font-size: 22px;
@@ -634,13 +639,13 @@ a.thumbnail-link, .blok-link {
   float: left;
 }
 
-/* line 205, ../src/_base.scss */
+/* line 209, ../src/_base.scss */
 .artikel-hoofd {
   position: relative;
   overflow: hidden;
 }
 
-/* line 210, ../src/_base.scss */
+/* line 214, ../src/_base.scss */
 .artikel, article.link {
   position: relative;
   width: 100%;
@@ -651,17 +656,17 @@ a.thumbnail-link, .blok-link {
   margin-bottom: 10px;
 }
 
-/* line 220, ../src/_base.scss */
+/* line 224, ../src/_base.scss */
 .artikel:nth-child(5), article.link:nth-child(11) {
   margin-bottom: 60px;
 }
 
-/* line 224, ../src/_base.scss */
+/* line 228, ../src/_base.scss */
 #inhoud {
   background: url("../images/achtergrondpixel.png");
 }
 
-/* line 228, ../src/_base.scss */
+/* line 232, ../src/_base.scss */
 .bericht-icoon {
   display: block;
   position: relative;
@@ -673,12 +678,12 @@ a.thumbnail-link, .blok-link {
 }
 
 /* menu */
-/* line 240, ../src/_base.scss */
+/* line 244, ../src/_base.scss */
 .knop {
   position: absolute;
 }
 
-/* line 244, ../src/_base.scss */
+/* line 248, ../src/_base.scss */
 .knop a, .subknop a {
   display: block;
   width: 100%;
@@ -687,13 +692,13 @@ a.thumbnail-link, .blok-link {
   outline: none;
 }
 
-/* line 252, ../src/_base.scss */
+/* line 256, ../src/_base.scss */
 #inhoud {
   text-align: justify;
 }
 
 /* footer */
-/* line 258, ../src/_base.scss */
+/* line 262, ../src/_base.scss */
 #rss {
   background: url("../images/RSS.png") no-repeat;
   width: 25px;
@@ -702,7 +707,7 @@ a.thumbnail-link, .blok-link {
   margin-top: 0px;
 }
 
-/* line 266, ../src/_base.scss */
+/* line 270, ../src/_base.scss */
 #copyright {
   background: url("../images/creative-commons.png") no-repeat;
   width: 71px;
@@ -712,7 +717,7 @@ a.thumbnail-link, .blok-link {
   margin-top: 0px;
 }
 
-/* line 275, ../src/_base.scss */
+/* line 279, ../src/_base.scss */
 #icoontjes {
   width: 110px;
   height: 25px;
